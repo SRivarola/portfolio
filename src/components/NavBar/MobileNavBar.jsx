@@ -6,7 +6,7 @@ import { TbMessageCircle } from 'react-icons/tb'
 
 const MobileNavBar = () => {
   return (
-    <nav className="absolute bottom-10 sm:hidden w-screen h-20 z-50">
+    <nav className="absolute bottom-7 sm:hidden w-screen h-20 z-50">
         <motion.div
             initial={{opacity: 0, y: 150}}
             animate={{opacity: 1, y: 0}}

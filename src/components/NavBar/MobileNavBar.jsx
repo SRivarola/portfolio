@@ -14,10 +14,10 @@ const MobileNavBar = () => {
             className="h-full w-[90%] mx-auto rounded-[100px] bg-black/70 flex items-center justify-center"
         >
             <ul className="w-full flex justify-evenly text-3xl">
-                <motion.li whileTap={{ scale: 0.9 }} ><NavLink to='/' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><AiOutlineHome /></NavLink></motion.li>
-                <motion.li whileTap={{ scale: 0.9 }} ><NavLink to='/about' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><AiOutlineUser /></NavLink></motion.li>
-                <motion.li whileTap={{ scale: 0.9 }} ><NavLink to='/portfolio' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><BsBriefcase /></NavLink></motion.li>
-                <motion.li whileTap={{ scale: 0.9 }} ><NavLink to='/contact' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><TbMessageCircle /></NavLink></motion.li>
+                <motion.li whileTap={{ scale: 0.75 }} ><NavLink to='/' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><AiOutlineHome /></NavLink></motion.li>
+                <motion.li whileTap={{ scale: 0.75 }} ><NavLink to='/about' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><AiOutlineUser /></NavLink></motion.li>
+                <motion.li whileTap={{ scale: 0.75 }} ><NavLink to='/portfolio' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><BsBriefcase /></NavLink></motion.li>
+                <motion.li whileTap={{ scale: 0.75 }} ><NavLink to='/contact' className={({isActive}) => isActive ? 'text-[#14d85c]' : 'text-white'}><TbMessageCircle /></NavLink></motion.li>
             </ul>
         </motion.div>
     </nav>

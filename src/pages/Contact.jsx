@@ -42,7 +42,7 @@ const Contact = () => {
                 transition: { duration: 0.5 },
               }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => handleNavigate('https://api.whatsapp.com/send?phone=+5460057411&text=Hola.%20Vi%20tu%20portfolio.')}
+              onClick={() => handleNavigate('https://api.whatsapp.com/send?phone=+541160057411&text=Hola.%20Vi%20tu%20portfolio.')}
             >
               <BsWhatsapp />
             </motion.button>

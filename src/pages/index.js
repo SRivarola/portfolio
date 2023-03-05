@@ -1,4 +1,4 @@
 export { default as Main } from './Main'
 export { default as About } from './About'
 export { default as Portfolio } from './Portfolio'
-export { default as Contact } from '../components/Contact'
+export { default as Contact } from './Contact'

@@ -26,8 +26,8 @@ const HomeLink = ({ isOpen, handleToggle }) => {
         <NavLink 
           to='/' 
           className={({isActive}) => 
-            isActive  ? 'font-bold text-3xl text-[#14d85c] text-shadow transition ease-in' 
-                      : 'font-bold text-3xl text-white text-shadow transition ease-in hover:text-[#14d85c]'
+            isActive  ? 'font-bold text-3xl text-primary text-shadow transition ease-in' 
+                      : 'font-bold text-3xl text-white text-shadow transition ease-in hover:text-primary'
           }
           onClick={handleToggle}
         >

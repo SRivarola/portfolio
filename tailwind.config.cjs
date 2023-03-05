@@ -2,7 +2,6 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
-  darkMode: "class",
   theme: {
     fontSize: {
       sm: '0.8rem',
@@ -21,8 +20,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#ffffff",
-        secondary: "#161616",
+        primary: "#14d85c",
+        secondary: "#161b12",
         blue: "#0c88ee",
         yellow: "ffeb43",
       },

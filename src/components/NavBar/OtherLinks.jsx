@@ -59,8 +59,8 @@ const OtherLinks = ({ isOpen, handleToggle }) => {
             <NavLink 
                 to='/about' 
                 className={({isActive}) => 
-                    isActive    ? 'text-[#14d85c] font-semibold' 
-                                : 'hover:text-[#14d85c]'
+                    isActive    ? 'text-primary font-semibold' 
+                                : 'hover:text-primary'
                 }
                 onClick={handleToggle}
             >
@@ -74,8 +74,8 @@ const OtherLinks = ({ isOpen, handleToggle }) => {
             <NavLink 
                 to='/portfolio' 
                 className={({isActive}) => 
-                    isActive    ? 'text-[#14d85c] font-semibold' 
-                                : 'hover:text-[#14d85c]'
+                    isActive    ? 'text-primary font-semibold' 
+                                : 'hover:text-primary'
                 }
                 onClick={handleToggle}
             >
@@ -89,8 +89,8 @@ const OtherLinks = ({ isOpen, handleToggle }) => {
             <NavLink 
                 to='/contact' 
                 className={({isActive}) => 
-                    isActive    ? 'text-[#14d85c] font-semibold' 
-                                : 'hover:text-[#14d85c]'
+                    isActive    ? 'text-primary font-semibold' 
+                                : 'hover:text-primary'
                 }
                 onClick={handleToggle}
             >

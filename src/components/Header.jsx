@@ -13,7 +13,7 @@ const Header = () => {
         >
             <div className="flex flex-col justify-center sm:text-5xl">
                 <p>¡Hola! Soy Santiago,</p>
-                <div className='flex justify-center sm:justify-start text-[#14d85c] font-semibold text-shadow'>
+                <div className='flex justify-center sm:justify-start text-primary font-semibold text-shadow'>
                     <Typewriter
                         options={{
                             autoStart: true, 
@@ -33,7 +33,7 @@ const Header = () => {
             className="sm:w-[50%] relative flex items-center justify-center">
             <img 
                 className="relative w-[400px] rounded-tl-[25%] rounded-br-[25%] rounded-tr-[10%] rounded-bl-[10%] shadow-[0_0_10px_rgba(0,0,0,0.702)]"
-                src='https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fperfil.png?alt=media&token=9b05bd5a-3ed5-448e-beb4-272377e92869' alt="foto de perfil" 
+                src='https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fperfil1.jpg?alt=media&token=9d3ca498-4161-48a6-8137-0914bfaa0c26' alt="foto de perfil" 
             />
         </motion.div>
     </div>

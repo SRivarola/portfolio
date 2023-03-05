@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom"
 import { motion, useCycle } from 'framer-motion'
-import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import HomeLink from "./HomeLink";
 import OtherLinks from "./OtherLinks";
 
@@ -18,10 +19,21 @@ const closed = {
 const DesktopNavBar = () => {
 
     const [isOpen, toggleOpen] = useCycle(false, true)
-  
+    const [icon, setIcon] = useState(<IoMdArrowDropup className="text-primary text-2xl"/>)
+    
     const handleToggle = () => {
       toggleOpen()
     }
+
+    useEffect(() => {
+      setTimeout(() => {
+        isOpen && setIcon(<IoMdArrowDropup className="text-primary text-2xl"/>)
+      }, 750)
+      setTimeout(() => {
+        !isOpen && setIcon(<IoMdArrowDropdown className="text-primary text-2xl"/>)
+      }, 1000)
+    }, [isOpen])
+    
     
   return (
     <nav className="hidden sm:inline fixed w-full rounded-b-2xl h-fit">
@@ -37,9 +49,9 @@ const DesktopNavBar = () => {
         <div className="w-full h-6 flex justify-center">
             <button
                 onClick={() => handleToggle()} 
-                className="flex items-center bg-[#161b12]/80 px-10 rounded-b-md"
+                className="flex items-center bg-secondary/80 px-10 rounded-b-md"
             >
-            <IoMdArrowDropdown className="text-[#14d85c] text-2xl"/>
+              {icon}
             </button>
         </div>
     </nav>

@@ -78,8 +78,8 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div  className="flex w-full h-[50vh] rounded-lg border-2 border-primary">
-          <form className="flex flex-col p-2 w-full gap-5">
+        <div  className="flex w-full sm:w-[50%] h-[50vh] sm:h-fit sm:px-20">
+          <form className="flex flex-col justify-between p-2 w-full gap-5 sm:gap-10 text-lg border-2 border-primary rounded-lg">
             <div className="flex flex-col gap-2">
               <label>Nombre:</label>
               <input
@@ -90,11 +90,21 @@ const Contact = () => {
             </div>
             <div className="flex flex-col">
               <label>Email:</label>
-              <input />
+              <input 
+                className="w-full bg-transparent placeholder:italic border-b-2 border-white outline-none px-2"
+                placeholder="Ingrese su email"
+                type='email'
+              />
             </div>
             <div className="flex flex-col">
               <label>Mensaje:</label>
-              <input />
+              <textarea
+                className="w-full h-28 bg-transparent placeholder:italic border-b-2 border-white outline-none px-2" 
+                placeholder="Ingrese un mensaje..."
+              />
+            </div>
+            <div className="flex justify-center">
+              <button className="bg-primary/60 py-1 px-6 rounded font-semibold">ENVIAR</button>
             </div>
           </form>
         </div>

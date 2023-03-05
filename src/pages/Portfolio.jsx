@@ -53,7 +53,7 @@ const Portfolio = () => {
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration: 2.5}}
-          className="w-full flex justify-center items-center"
+          className="pt-8 sm:pt-0 w-full flex justify-center items-center"
         >
           <button
             onClick={() => handlePage('-')}
@@ -73,7 +73,7 @@ const Portfolio = () => {
             <FaArrowAltCircleRight className={`text-4xl ${page === arrayPortfolio.length - 1 ? 'text-[grey]' : 'text-white'}`}/>
           </button>
         </motion.div>
-        <div className="relative flex justify-evenly w-full h-28 mt-5 sm:mt-0" >
+        <div className="relative flex justify-evenly w-full h-28 mt-8 sm:mt-0" >
           {
             arrayPortfolio.map((item, idx) => (
               <ItemPortadas key={item.id} item={item} page={page} idx={idx} isPhone={isPhone} setPage={setPage} />

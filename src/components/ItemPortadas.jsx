@@ -8,7 +8,7 @@ const ItemPortadas = ({item, page, idx, isPhone, setPage}) => {
     <motion.div
         initial={{opacity: 0, y: 50}}
         animate={{opacity: 1, y: 0}}
-        transition={{duration: 1, delay: delay}}
+        transition={{duration: .8, delay: delay}}
         className={`h-full p-1 rounded-xl ${page === idx && 'border-2 border-primary'}`}
     >
         <img

@@ -30,7 +30,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="h-screen w-screen flex flex-col justify-start items-evenly text-white pt-10 sm:pt-28">
+    <div className="h-screen w-screen flex flex-col justify-start items-evenly text-white pt-5 sm:pt-28">
       <motion.h2 
         initial={{opacity: 0, y: -50}}
         animate={{opacity: 1, y: 0}}

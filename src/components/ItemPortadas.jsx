@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const ItemPortadas = ({item, page, idx, isPhone, setPage}) => {
 
-    const delay = idx * 0.25
+    const delay = idx * 0.2 + 0.75
 
   return (
     <motion.div

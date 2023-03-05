@@ -40,7 +40,7 @@ const Portfolio = () => {
   }, []);
   
   return (
-    <div className="w-full h-screen flex flex-col pt-8 sm:pt-0 sm:justify-center justify-start items-center text-white gap-2">
+    <div className="w-full h-screen flex flex-col pt-8 sm:pt-16 sm:justify-center justify-start items-center text-white gap-2 sm:gap-1">
         <motion.h2 
           initial={{opacity: 0, y: -50}}
           animate={{opacity: 1, y: 0}}

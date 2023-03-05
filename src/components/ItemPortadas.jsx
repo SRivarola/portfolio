@@ -6,12 +6,13 @@ const ItemPortadas = ({item, page, idx, isPhone, setPage}) => {
 
   return (
     <motion.div
-        initial={{opacity: 0, y: 50}}
-        animate={{opacity: 1, y: 0}}
-        transition={{duration: .8, delay: delay}}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{duration: .8, delay: delay }}
         className={`h-full p-1 rounded-xl ${page === idx && 'border-2 border-primary'}`}
     >
-        <img
+        <motion.img
+        whileTap={{ scale: 0.75 }}
         onClick={() => setPage(idx)} 
         src={isPhone ? item.imgPortada : item.imgWide} 
         className="drop-shadow-lg h-full rounded-lg cursor-pointer" alt="foto del producto"

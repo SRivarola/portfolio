@@ -58,7 +58,7 @@ const Portfolio = () => {
             <FaArrowAltCircleRight className={`text-4xl ${page === arrayPortfolio.length - 1 ? 'text-[grey]' : 'text-white'}`}/>
           </button>
         </div>
-        <div className="relative flex justify-evenly w-full h-28 mt-10 sm:mt-0">
+        <div className="relative flex justify-evenly w-full h-28 mt-5 sm:mt-0">
           {
             arrayPortfolio.map((item, idx) => (
               <div className={`h-full p-1 rounded-xl ${page === idx && 'border-2 border-primary'}`}>

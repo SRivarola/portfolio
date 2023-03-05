@@ -7,7 +7,7 @@ export const portfolio = [
         "imgWide": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FetanaWide.jpg?alt=media&token=65987749-bfe9-46ba-95a2-f7ed6027fb91",
         "color": "#000",
         "desc": "Proyecto para una marca de botas. Realizado en ReactJs, conectado a una base de datos en firebase. Cuenta con una sección LogIn para administradores, para que el sitio sea auto-administrable de manera fácil y segura.",
-        "site": "https://etanabaires.com",
+        "site": "https://etanabaires.netlify.app/",
         "repo": "https://github.com/SRivarola/Etana"
     },
     {

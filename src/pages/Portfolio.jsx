@@ -2,6 +2,9 @@ import ItemPortfolio from "../components/ItemPortfolio"
 import { useEffect, useState } from "react";
 import { portfolio } from "../data/data"
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import ItemPortadas from "../components/ItemPortadas";
+
 const Portfolio = () => {
 
   const [arrayPortfolio, setArrayPortfolio] = useState([])
@@ -38,8 +41,20 @@ const Portfolio = () => {
   
   return (
     <div className="w-full h-screen flex flex-col pt-8 sm:pt-0 sm:justify-center justify-start items-center text-white gap-2">
-        <h2 className='text-center text-shadow text-3xl sm:text-4xl font-semibold'>Portfolio</h2>
-        <div className="w-full flex justify-center items-center">
+        <motion.h2 
+          initial={{opacity: 0, y: -50}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration: 1}}
+          className='text-center text-shadow text-3xl sm:text-4xl font-semibold'
+        >
+          Portfolio
+        </motion.h2>
+        <motion.div 
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 2.5}}
+          className="w-full flex justify-center items-center"
+        >
           <button
             onClick={() => handlePage('-')}
             disabled={page === 0}
@@ -57,17 +72,11 @@ const Portfolio = () => {
           >
             <FaArrowAltCircleRight className={`text-4xl ${page === arrayPortfolio.length - 1 ? 'text-[grey]' : 'text-white'}`}/>
           </button>
-        </div>
-        <div className="relative flex justify-evenly w-full h-28 mt-5 sm:mt-0">
+        </motion.div>
+        <div className="relative flex justify-evenly w-full h-28 mt-5 sm:mt-0" >
           {
             arrayPortfolio.map((item, idx) => (
-              <div className={`h-full p-1 rounded-xl ${page === idx && 'border-2 border-primary'}`}>
-                <img
-                  onClick={() => setPage(idx)} 
-                  src={isPhone ? item.imgPortada : item.imgWide} 
-                  className="drop-shadow-lg h-full rounded-lg cursor-pointer" alt="foto del producto"
-                />
-              </div>
+              <ItemPortadas key={item.id} item={item} page={page} idx={idx} isPhone={isPhone} setPage={setPage} />
             ))
           }
         </div>

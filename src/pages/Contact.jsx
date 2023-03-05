@@ -31,10 +31,22 @@ const Contact = () => {
 
   return (
     <div className="h-screen w-screen flex flex-col justify-start items-evenly text-white pt-10 sm:pt-28">
-      <h2 className="text-center text-3xl text-shadow sm:text-4xl font-semibold">Contacto</h2>
+      <motion.h2 
+        initial={{opacity: 0, y: -50}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 1}}
+        className="text-center text-3xl text-shadow sm:text-4xl font-semibold"
+      >
+        Contacto
+      </motion.h2>
       <div className="flex flex-col sm:flex-row p-6 sm:p-8 gap-5 w-full">
         <div className="flex flex-col w-full sm:w-[50%] p-2 sm:gap-10 ">
-          <div className="flex justify-center flex-wrap sm:flex-nowrap gap-6 sm:gap-10">
+          <motion.div 
+            initial={{opacity: 0, x: -50}}
+            animate={{opacity: 1, x: 0}}
+            transition={{duration: 1, delay: 0.5}}
+            className="flex justify-center flex-wrap sm:flex-nowrap gap-6 sm:gap-10"
+          >
             <motion.button
               className="text-4xl"
               whileHover={{
@@ -81,13 +93,18 @@ const Contact = () => {
               <BsGithub />
             </motion.button>
             <a className="bg-primary/60 py-2 px-6 rounded font-semibold text-xl hover:bg-primary/70" href="./Santiago Rivarola CV.pdf" download>Descargar CV</a>
-          </div>
-          <div className="hidden w-full sm:flex justify-center">
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 50}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 1, delay: 1}}
+            className="hidden w-full sm:flex justify-center"
+          >
             <img
               className="w-[300px]" 
               src="https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fqrwhatsapp.png?alt=media&token=17d1bf4d-2480-455f-9b0b-4031f89c5940" alt='qr whatsapp' 
             />
-          </div>
+          </motion.div>
         </div>
         <ContactForm />
       </div>

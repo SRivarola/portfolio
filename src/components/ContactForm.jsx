@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 const ContactForm = () => {
 
     const handleSubmit = (e) => {
@@ -8,7 +10,12 @@ const ContactForm = () => {
     }
 
   return (
-    <div  className="flex w-full sm:w-[50%] h-[50vh] sm:h-fit sm:px-20">
+    <motion.div  
+        initial={{opacity: 0, x: 50}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 1, delay: 0.5}}
+        className="flex w-full sm:w-[50%] h-[50vh] sm:h-fit sm:px-20"
+    >
         <form className="flex flex-col justify-between p-2 w-full gap-5 sm:gap-10 text-lg border-2 border-primary rounded-lg">
             <div className="flex flex-col gap-2">
                 <label>Nombre:</label>
@@ -37,7 +44,7 @@ const ContactForm = () => {
                 <button type="submit" onClick={(e) => handleSubmit(e)} className="bg-primary/60 py-1 px-6 rounded font-semibold">ENVIAR</button>
             </div>
         </form>
-    </div>
+    </motion.div>
   )
 }
 export default ContactForm

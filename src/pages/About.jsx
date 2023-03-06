@@ -16,7 +16,7 @@ const About = () => {
           className='sm:w-[50%] sm:flex sm:justify-end'
           initial={{opacity: 0, x: -50}}
           animate={{opacity: 1, x: 0}}
-          transition={{duration: 1.5}}
+          transition={{duration: 2}}
         >
           <img 
                 className='float-left sm:float-none mr-3 sm:mr-0 w-[40%] sm:w-[35%] rounded-[5px] shadow-[0_0_10px_rgba(0,0,0,0.702)]' 

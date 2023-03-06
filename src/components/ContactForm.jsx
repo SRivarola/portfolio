@@ -21,6 +21,9 @@ const ContactForm = () => {
         if(name !== '' && email !== '' && message !== '') {
             emailjs.send('service_ajbh50b', 'template_twzekie', formData, 'v0lNPVS6GlqJPqBF8')
             alertMessage('success', 'Mensaje enviado!', '#00b843')
+            setTimeout(() => {
+                setFormData({ name: '', email: '', message: ''})
+            }, 1500);
         } else {
             alertMessage('error', 'Error al completar formulario!', '#ff0000')
         }

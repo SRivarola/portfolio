@@ -2,31 +2,13 @@ import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
 import { SiGmail } from 'react-icons/si'
 import { motion } from "framer-motion"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import { alertMessage } from "../helpers/alerts"
 import ContactForm from "../components/ContactForm"
 
 const Contact = () => {
   
-  const MySwal = withReactContent(Swal)
-
   const handleNavigate = (route) =>{
     window.open(route, '_blank')
-  }
-
-  const handleCopy = () => {
-    MySwal.fire({
-      title: <p>Copiado</p>,
-      color: '#000',
-      icon: 'success',
-      iconColor: '#17962a',
-      background: '#fff',
-      showConfirmButton: false,
-      toast: true,
-      timer: '1500',
-      timerProgressBar: true,
-      position: 'bottom-end',
-    })
   }
 
   return (
@@ -37,7 +19,7 @@ const Contact = () => {
         transition={{duration: 1}}
         className="text-center text-3xl text-shadow sm:text-4xl font-semibold"
       >
-        Contacto
+        Contactame
       </motion.h2>
       <div className="flex flex-col sm:flex-row p-6 sm:p-8 gap-5 w-full">
         <div className="flex flex-col w-full sm:w-[50%] p-2 sm:gap-10 ">
@@ -65,9 +47,13 @@ const Contact = () => {
                 transition: { duration: 0.5 },
               }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => handleNavigate('https://api.whatsapp.com/send?phone=+541160057411&text=Hola.%20Vi%20tu%20portfolio.')}
+              onClick={() => alertMessage('success', 'Copiado, srivarola@gmail.com', '#17962a')}
             >
-              <SiGmail />
+              <CopyToClipboard 
+                text='srivarola@gmail.com'
+              >
+                <SiGmail />
+              </CopyToClipboard>
             </motion.button>
             <motion.button
               className="text-4xl"
@@ -92,7 +78,13 @@ const Contact = () => {
             >
               <BsGithub />
             </motion.button>
-            <a className="bg-primary/60 py-2 px-6 rounded font-semibold text-xl hover:bg-primary/70" href="./Santiago Rivarola CV.pdf" download>Descargar CV</a>
+            <motion.a 
+              whileTap={{ scale: 0.9 }}
+              className="bg-primary/60 py-2 px-6 rounded font-semibold text-xl hover:bg-primary/70" href="./Santiago Rivarola CV.pdf" 
+              download
+            >
+              Descargar CV
+            </motion.a>
           </motion.div>
           <motion.div
             initial={{opacity: 0, y: 50}}

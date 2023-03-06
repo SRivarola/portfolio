@@ -18,7 +18,7 @@ const closed = {
 
 const DesktopNavBar = () => {
 
-    const [isOpen, toggleOpen] = useCycle(false, true)
+    const [isOpen, toggleOpen] = useCycle(true, false)
     const [icon, setIcon] = useState(<IoMdArrowDropup className="text-primary text-2xl"/>)
     
     const handleToggle = () => {
@@ -38,7 +38,6 @@ const DesktopNavBar = () => {
   return (
     <nav className="hidden sm:inline fixed w-full rounded-b-2xl h-fit">
         <motion.div
-            initial={false}
             animate={isOpen ? open : closed}
             transition={{ duration: 0.75 }}
             className='bg-black/50 rounded-b-xl flex items-center justify-between px-24'

@@ -1,12 +1,30 @@
+import { useState } from 'react'
 import { motion } from "framer-motion"
+import { alertMessage } from '../helpers/alerts'
+import emailjs from '@emailjs/browser'
 
 const ContactForm = () => {
 
+    const [formData, setFormData] = useState({ name: '', email: '', message: ''})
+
+    const handleChange = (e) => {
+        const key = e.target.name
+        setFormData({
+            ...formData,
+            [key]: e.target.value
+        })
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(e.target.form[0].value)
-        console.log(e.target.form[1].value)
-        console.log(e.target.form[2].value)
+        const {name, email, message} = formData
+        if(name !== '' && email !== '' && message !== '') {
+            emailjs.send('service_ajbh50b', 'template_twzekie', formData, 'v0lNPVS6GlqJPqBF8')
+            alertMessage('success', 'Mensaje enviado!', '#00b843')
+        } else {
+            alertMessage('error', 'Error al completar formulario!', '#ff0000')
+        }
+
     }
 
   return (
@@ -20,28 +38,47 @@ const ContactForm = () => {
             <div className="flex flex-col gap-2">
                 <label>Nombre:</label>
                 <input
+                    name='name'
                     className="w-full bg-transparent placeholder:italic border-b-2 border-white outline-none px-2"
                     placeholder="Ingrese su nombre" 
                     type='text'
+                    autoComplete='off'
+                    value={formData.name}
+                    onChange={(e) => handleChange(e)}
                 />
             </div>
             <div className="flex flex-col">
                 <label>Email:</label>
                 <input 
+                    name='email'
                     className="w-full bg-transparent placeholder:italic border-b-2 border-white outline-none px-2"
                     placeholder="Ingrese su email"
                     type='mail'
+                    autoComplete='off'
+                    value={formData.email}
+                    onChange={(e) => handleChange(e)}
                 />
             </div>
             <div className="flex flex-col">
                 <label>Mensaje:</label>
                 <textarea
+                    name='message'
                     className="w-full h-28 bg-transparent placeholder:italic border-b-2 border-white outline-none px-2" 
                     placeholder="Ingrese un mensaje..."
+                    autoComplete='off'
+                    value={formData.message}
+                    onChange={(e) => handleChange(e)}
                 />
             </div>
             <div className="flex justify-center">
-                <button type="submit" onClick={(e) => handleSubmit(e)} className="bg-primary/60 py-1 px-6 rounded font-semibold">ENVIAR</button>
+                <motion.button
+                    whileTap={{ scale: 0.9 }} 
+                    type="submit" 
+                    onClick={(e) => handleSubmit(e)} 
+                    className="bg-primary/60 py-1 px-6 rounded font-semibold hover:bg-primary/70"
+                >
+                    ENVIAR
+                </motion.button>
             </div>
         </form>
     </motion.div>

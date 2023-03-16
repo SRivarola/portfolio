@@ -5,7 +5,7 @@ const About = () => {
     <div className="h-screen w-screen flex flex-col justify-start sm:justify-center items-center sm:gap-8 sm:py-10 text-white">
       <motion.h2 
         initial={{opacity: 0, y: -50}}
-        animate={{opacity: 1, y: 0}}
+              animate={{opacity: 1, y: 0}}
         transition={{duration: 1}}
         className='text-center py-8 text-shadow text-3xl sm:text-4xl font-semibold'
       >

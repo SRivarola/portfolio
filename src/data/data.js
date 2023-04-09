@@ -1,14 +1,14 @@
 export const portfolio = [
     {
         "id": "00",
-        "name": "ETANA Buenos Aires",
-        "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fetana_logo1.png?alt=media&token=aab38b70-03d5-4729-8d75-d163699a8657",
-        "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fetana.gif?alt=media&token=ceff9712-ed87-46cf-880c-888e158f601c",
-        "imgWide": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FetanaWide.jpg?alt=media&token=65987749-bfe9-46ba-95a2-f7ed6027fb91",
-        "color": "#000",
-        "desc": "Proyecto para una marca de botas. Realizado en ReactJs, conectado a una base de datos en firebase. Cuenta con una sección LogIn para administradores, para que el sitio sea auto-administrable de manera fácil y segura.",
-        "site": "https://etanabaires.netlify.app/",
-        "repo": "https://github.com/SRivarola/Etana"
+        "name": "VTEX - ETANA",
+        "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FetanaLogo.png?alt=media&token=dd34f6a8-e798-41e7-ba6b-c86e1053c0ee",
+        "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fvtex-portadaMobile.jpg?alt=media&token=4d53a2ad-b0b6-4524-b2d8-455b027fdbfb",
+        "imgWide": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fvtex-portadaDesktop.jpg?alt=media&token=f1204f76-0aa1-4d52-ab09-95c310895979",
+        "color": "#fbe768",
+        "desc": "Proyecto para una capacitacion de VTEX. Realizado con el store theme. Este proyecto esta realizado en modo educativo, por lo que utilice imagenes de otra web.",
+        "site": "",
+        "repo": "https://github.com/SRivarola/vtex-capacitacion"
     },
     {
         "id": "01",
@@ -22,7 +22,18 @@ export const portfolio = [
         "repo": "https://github.com/SRivarola/FixtureWorldCup2022"
     },
     {
-        "id": "02",
+        "id": "01",
+        "name": "ETANA Buenos Aires",
+        "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fetana_logo1.png?alt=media&token=aab38b70-03d5-4729-8d75-d163699a8657",
+        "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fetana.gif?alt=media&token=ceff9712-ed87-46cf-880c-888e158f601c",
+        "imgWide": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FetanaWide.jpg?alt=media&token=65987749-bfe9-46ba-95a2-f7ed6027fb91",
+        "color": "#000",
+        "desc": "Proyecto para una marca de botas. Realizado en ReactJs, conectado a una base de datos en firebase. Cuenta con una sección LogIn para administradores, para que el sitio sea auto-administrable de manera fácil y segura.",
+        "site": "https://etanabaires.netlify.app/",
+        "repo": "https://github.com/SRivarola/Etana"
+    },
+    {
+        "id": "03",
         "name": "SERRANO 360°",
         "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fserrano360_logo.png?alt=media&token=68b2d90e-8dcf-4292-b99f-2491c9452bf7",
         "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fserrano360.jpg?alt=media&token=ede07008-0a6f-4e0a-bdff-389ae72b5486",
@@ -33,7 +44,7 @@ export const portfolio = [
         "repo": "https://github.com/SRivarola/Serrano360"
     },
     {
-        "id": "03",
+        "id": "04",
         "name": "Ivoré Indumentaria",
         "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fivore_logo.png?alt=media&token=03d1ec72-8f1f-41ae-8d10-7757d158fb59",
         "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fivore.jpg?alt=media&token=5734731d-1303-4e00-9875-009a43b861b5",
@@ -44,7 +55,7 @@ export const portfolio = [
         "repo": "https://github.com/SRivarola/Ivore-Indumentaria"
     },
     {
-        "id": "04",
+        "id": "05",
         "name": "Poke-Quiz",
         "imgLogo": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FpokeLogo.png?alt=media&token=35598c62-477e-49b8-99e5-e943f1e553e8",
         "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2FpokeSiteMobile.jpg?alt=media&token=157a3a20-c831-49c5-a573-8d76ffdfe425",

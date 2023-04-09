@@ -9,7 +9,6 @@ const Skill = ({skill, children}) => {
     >
         {children}
         <ReactTooltip
-
             id={skill}
             className="absolute font-semibold text-base text-black bg-white px-3 py-1 rounded"
         >

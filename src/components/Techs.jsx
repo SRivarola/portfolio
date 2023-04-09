@@ -1,5 +1,5 @@
 import { IoLogoHtml5, IoLogoCss3, IoLogoSass, IoLogoReact, IoLogoGithub } from "react-icons/io5"
-import { SiTailwindcss, SiTypescript, SiJavascript, SiNextdotjs } from "react-icons/si"
+import { SiTailwindcss, SiTypescript, SiJavascript, SiNextdotjs, SiVtex } from "react-icons/si"
 import Skill from "./Skill"
 
 const Techs = () => {
@@ -30,6 +30,9 @@ const Techs = () => {
           </Skill>
           <Skill skill='TailwidCss'>
             <SiTailwindcss color="#38a8ff"/>
+          </Skill>
+          <Skill skill='VTEX'>
+            <SiVtex color="#f61964" />
           </Skill>
           <Skill skill='GitHub'>
             <IoLogoGithub />

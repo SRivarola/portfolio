@@ -5,7 +5,7 @@ import './portfolio.css'
 const ItemPortfolio = ({item}) => {
 
     const [isPhone, setIsPhone] = useState( window.innerWidth > 768 ? false : true )
-    const mql = window.matchMedia('(max-width:768px)')
+    // const mql = window.matchMedia('(max-width:768px)')
     
     const handleNavigate = (route) =>{
       window.open(route, '_blank')
@@ -27,8 +27,8 @@ const ItemPortfolio = ({item}) => {
             <img src={item.imgLogo} className="logo_" alt="logo del producto"/>
         </div>
         <div className="content">
-            <h3>{item.name}</h3>
-            <p>{item.desc}</p>
+            <h3 className={`font-semibold ${item.id == '00' ? "text-black" : "text-white"}`}>{item.name}</h3>
+            <p className={`${item.id === '00' ? "text-black" : "text-white"}`}>{item.desc}</p>
             <div className="flex justify-between gap-3">
                 <motion.button
                     whileHover={{
@@ -38,6 +38,7 @@ const ItemPortfolio = ({item}) => {
                     }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => handleNavigate(item.site)}
+                    className={`${item.id === '00' && 'hidden'}`}
                 >
                     Visitar sitio
                 </motion.button>

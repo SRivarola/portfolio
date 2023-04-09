@@ -28,11 +28,11 @@ const Techs = () => {
           <Skill skill='NextJS'>
             <SiNextdotjs />
           </Skill>
-          <Skill skill='TailwidCss'>
-            <SiTailwindcss color="#38a8ff"/>
-          </Skill>
           <Skill skill='VTEX'>
             <SiVtex color="#f61964" />
+          </Skill>
+          <Skill skill='TailwidCss'>
+            <SiTailwindcss color="#38a8ff"/>
           </Skill>
           <Skill skill='GitHub'>
             <IoLogoGithub />

@@ -6,7 +6,7 @@ export const portfolio = [
         "imgPortada": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fvtex-portadaMobile.jpg?alt=media&token=4d53a2ad-b0b6-4524-b2d8-455b027fdbfb",
         "imgWide": "https://firebasestorage.googleapis.com/v0/b/fixturewolrdcup2022.appspot.com/o/portfolio%2Fvtex-portadaDesktop.jpg?alt=media&token=f1204f76-0aa1-4d52-ab09-95c310895979",
         "color": "#fbe768",
-        "desc": "Proyecto para una capacitacion de VTEX. Realizado con el store theme. Este proyecto esta realizado en modo educativo, por lo que utilice imagenes de otra web.",
+        "desc": "Proyecto para una capacitacion de VTEX. Realizado con el store theme. Este proyecto esta realizado a modo educativo, por lo que utilice imágenes de otra web.",
         "site": "",
         "repo": "https://github.com/SRivarola/vtex-capacitacion"
     },

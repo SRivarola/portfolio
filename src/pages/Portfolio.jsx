@@ -62,7 +62,7 @@ const Portfolio = () => {
           >
             <FaArrowAltCircleLeft className={`text-4xl ${page === 0 ? 'text-[grey]' : 'text-white'}`}/>
           </button>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center sm:w-[740px]">
             { arrayPortfolio.length && <ItemPortfolio  item={arrayPortfolio[page]} />}
           </div>
           <button
